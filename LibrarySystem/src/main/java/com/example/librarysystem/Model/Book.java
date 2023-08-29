@@ -36,7 +36,7 @@ public class Book {
     private String category;
 
     @NotNull(message = "ISBN should not be empty")
-    @Column(columnDefinition = "int not null")
+    @Column(columnDefinition = "int not null unique")
     private Integer isbn;
 
     @Min(value = 50, message = "number of page must be 50 pages and more")
